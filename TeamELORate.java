@@ -94,7 +94,7 @@ public class TeamELORate{
 enum Result {
 	WIN(1),DRAW(0.5),LOSS(0);
 	private double weight;
-	Result(double weight){
+	private Result(double weight){
 		this.weight = weight;
 	}
 	public double getWeight(){

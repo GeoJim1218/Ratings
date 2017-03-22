@@ -38,10 +38,10 @@ public class TeamELORate{
 		return this.k;
 	}
 	
-	public void updateRate(int oppentRate,Result result){
+	public void updateRate(int opponentRate,Result result){
 		adjustK();
 		
-		rate = formerRate + k * (result.weight - getWinRate(rate,oppentRate)); 
+		rate = formerRate + k * (result.weight - getWinRate(rate,opponentRate)); 
 	}
 	
 	
